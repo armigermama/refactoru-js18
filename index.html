@@ -13,8 +13,11 @@
 
 	<script id="product-template" type="text/x-handlebars-template">
   		<div class="product">
-  				<header>{{#each title}}</header>{{/each}}
-  				<p>${{#each cost}}</p>{{/each}}
+        {{#each productsList}}
+  				<h2 class="product-title">{{title}}</h2>
+          <img src:"{{image}}">
+  				<h3>${{cost}}</h3>
+        {{/each}}
   		</div>
 	</script>
 
